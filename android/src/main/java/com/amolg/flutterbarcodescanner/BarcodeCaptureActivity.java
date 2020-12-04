@@ -322,10 +322,10 @@ public final class BarcodeCaptureActivity extends AppCompatActivity implements B
         // check that the device has play services available.
         int code = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(
                 getApplicationContext());
-        if (code != ConnectionResult.SUCCESS) {
-            Dialog dlg = GoogleApiAvailability.getInstance().getErrorDialog(this, code, RC_HANDLE_GMS);
-            dlg.show();
-        }
+        // if (code != ConnectionResult.SUCCESS) {
+        //     Dialog dlg = GoogleApiAvailability.getInstance().getErrorDialog(this, code, RC_HANDLE_GMS);
+        //     dlg.show();
+        // }
 
         if (mCameraSource != null) {
             try {
